@@ -29,4 +29,4 @@ To generate a GPIO controller for all I boards
 * GPIO 12 (PWM_0)
 * GPIO 16
 * GPIO 20 (PCM_DIN)
-* GPIO 17 (PCM_DOUT)
+
