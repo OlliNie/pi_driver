@@ -4,7 +4,8 @@
   "description": "To generate a GPIO controller for all I boards",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nodemon"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/SteelFace87/PI_GPIO_controller/issues"
   },
-  "homepage": "https://github.com/SteelFace87/PI_GPIO_controller#readme"
+  "homepage": "https://github.com/SteelFace87/PI_GPIO_controller#readme",
+  "devDependencies": {
+    "@types/node": "^14.14.8",
+    "nodemon": "^2.0.6",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.5"
+  }
 }
