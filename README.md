@@ -1,0 +1,32 @@
+# PURPOSE
+To generate a GPIO controller for all I boards
+
+# GPIO PINS 
+
+* GPIO 2 (SDA)
+* GPIO 3 (SCL)
+* GPIO 17
+* GPIO 27
+* GPIO 22
+* GPIO 10 (MOSI)
+* GPIO 9 (MISO)
+* GPIO 11 (SCLK)
+* GPIO 0 (ID_SD)
+* GPIO 5
+* GPIO 6
+* GPIO 13 (PWM1)
+* GPIO 19 (PCM FS)
+* GPIO 26
+* GPIO 14 (TXD)
+* GPIO 15 (RXD)
+* GPIO 18 (PCM_CLK)
+* GPIO 23
+* GPIO 24
+* GPIO 25
+* GPIO 8 (CEO)
+* GPIO 7 (CE1)
+* GPIO 1 (ID_SC)
+* GPIO 12 (PWM_0)
+* GPIO 16
+* GPIO 20 (PCM_DIN)
+* GPIO 17 (PCM_DOUT)
