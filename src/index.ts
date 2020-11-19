@@ -19,5 +19,5 @@ const pinConfigs: PinConfig[] = [
 
 const gpioController = new GpioControl(pinConfigs);
 
-gpioController.set_GPIO_23(PinValue.on);
+gpioController.set_GPIO_23(PinValue.on, (status) => console.log(status));
 gpioController.set_GPIO_25(PinValue.off);

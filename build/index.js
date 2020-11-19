@@ -10,5 +10,5 @@ var pinConfigs = [
     },
 ];
 var gpioController = new gpioController_1.GpioControl(pinConfigs);
-gpioController.set_GPIO_23(gpioController_1.PinValue.on);
+gpioController.set_GPIO_23(gpioController_1.PinValue.on, function (status) { return console.log(status); });
 gpioController.set_GPIO_25(gpioController_1.PinValue.off);
