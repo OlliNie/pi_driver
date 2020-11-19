@@ -82,7 +82,10 @@ const binaryValue = {
   on: 1 as BinaryValue,
 };
 
-const defaultFunction = (value: any, callBack: any) => {
+const defaultFunction = (
+  value: "on" | "off",
+  callBack?: (status: any) => {}
+) => {
   console.log(
     `Unable to set value to ${value}, since the pin is not setup yet`
   );
