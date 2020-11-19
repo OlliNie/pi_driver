@@ -1,5 +1,5 @@
 {
-  "name": "pi_controller",
+  "name": "best_gpio_controller",
   "version": "1.0.0",
   "description": "To generate a GPIO controller for all I boards",
   "main": "index.js",
