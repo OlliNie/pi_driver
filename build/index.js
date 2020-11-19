@@ -4,7 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.GpioControl = exports.EdgeType = exports.Type = exports.pins = exports.PinValue = void 0;
+exports.GpioControl = exports.EdgeType = exports.PinType = exports.pins = exports.PinValue = void 0;
 var onoff_1 = __importDefault(require("onoff"));
 var GPIO = onoff_1.default.Gpio;
 var PinValue;
@@ -59,13 +59,13 @@ exports.pins = {
         },
     },
 };
-var Type;
-(function (Type) {
-    Type["in"] = "in";
-    Type["out"] = "out";
-    Type["high"] = "high";
-    Type["low"] = "low";
-})(Type = exports.Type || (exports.Type = {}));
+var PinType;
+(function (PinType) {
+    PinType["in"] = "in";
+    PinType["out"] = "out";
+    PinType["high"] = "high";
+    PinType["low"] = "low";
+})(PinType = exports.PinType || (exports.PinType = {}));
 var EdgeType;
 (function (EdgeType) {
     EdgeType["none"] = "none";

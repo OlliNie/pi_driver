@@ -1,6 +1,6 @@
 {
   "name": "best_gpio_controller",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "To generate a GPIO controller for PI boards",
   "main": "build/index.js",
   "scripts": {

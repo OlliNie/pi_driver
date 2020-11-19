@@ -1,5 +1,4 @@
 /** @format */
-import { Direction, Edge } from "onoff";
 export declare enum PinValue {
     "on" = "on",
     "off" = "off"
@@ -51,7 +50,7 @@ export declare const pins: {
         };
     };
 };
-export declare enum Type {
+export declare enum PinType {
     "in" = "in",
     "out" = "out",
     "high" = "high",
@@ -64,9 +63,9 @@ export declare enum EdgeType {
     "both" = "both"
 }
 export interface PinConfig {
-    pinNumber: number;
-    type: Direction;
-    edge: Edge;
+    pinNumber: 0 | 1 | 2 | 3 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27;
+    type: PinType;
+    edge: EdgeType;
 }
 export declare class GpioControl {
     set_GPIO_2: (value: PinValue, callBack?: ((status: any) => void) | undefined) => void;
