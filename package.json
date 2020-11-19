@@ -1,8 +1,8 @@
 {
   "name": "best_gpio_controller",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "To generate a GPIO controller for PI boards",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:dev": "nodemon"
