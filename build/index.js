@@ -9,6 +9,6 @@ var pinConfigs = [
         edge: gpioController_1.EdgeType.both,
     },
 ];
-var gpioController = new gpioController_1.GpioControl([]);
-gpioController.set_GPIO_13(gpioController_1.PinValue.on);
+var gpioController = new gpioController_1.GpioControl(pinConfigs);
+gpioController.set_GPIO_23(gpioController_1.PinValue.on);
 gpioController.set_GPIO_25(gpioController_1.PinValue.off);
