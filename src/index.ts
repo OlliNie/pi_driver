@@ -9,7 +9,7 @@ export enum PinValue {
   "off" = "off",
 }
 
-interface Pins {
+export interface Pins {
   serialPins: {
     gpio_14_TX: PinNumber;
     gpio_15_RX: PinNumber;
