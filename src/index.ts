@@ -12,7 +12,7 @@ import {
 const pinConfigs: PinConfig[] = [
   {
     pinNumber: pins.standardPins.gpio_23,
-    type: Type.in,
+    type: Type.low,
     edge: EdgeType.both,
   },
 ];

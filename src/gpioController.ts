@@ -82,14 +82,18 @@ const binaryValue = {
   on: 1 as BinaryValue,
 };
 
-const defaultFunction = (value: any) => {
+const defaultFunction = (value: any, callBack: any) => {
   console.log(
     `Unable to set value to ${value}, since the pin is not setup yet`
   );
 };
 
-const createSetFunction = (x: Gpio) => (value: PinValue) => {
+const createSetFunction = (x: Gpio) => (value: PinValue, callBack: any) => {
+  x.setActiveLow(true); //  Inverts so that binary 1 activates a relay instead of binary 0
   x.writeSync(binaryValue[value]);
+  if (typeof callBack === "function") {
+    x.read(callBack);
+  }
 };
 
 export class GpioControl {

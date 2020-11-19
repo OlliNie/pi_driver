@@ -5,7 +5,7 @@ var gpioController_1 = require("./gpioController");
 var pinConfigs = [
     {
         pinNumber: gpioController_1.pins.standardPins.gpio_23,
-        type: gpioController_1.Type.in,
+        type: gpioController_1.Type.low,
         edge: gpioController_1.EdgeType.both,
     },
 ];
