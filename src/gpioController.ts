@@ -89,11 +89,11 @@ const defaultFunction = (value: PinValue, callBack?: (status: any) => void) => {
 };
 
 const createSetFunction = (x: Gpio) => (value: PinValue, callBack: any) => {
-  x.setActiveLow(true); //  Inverts so that binary 1 activates a relay instead of binary 0
-  x.writeSync(binaryValue[value]);
   if (typeof callBack === "function") {
     x.read(callBack);
   }
+  x.setActiveLow(true); //  Inverts so that binary 1 activates a relay instead of binary 0
+  x.writeSync(binaryValue[value]);
 };
 
 export class GpioControl {
