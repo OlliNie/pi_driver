@@ -81,11 +81,11 @@ var defaultFunction = function (value, callBack) {
     console.log("Unable to set value to " + value + ", since the pin is not setup yet");
 };
 var createSetFunction = function (x) { return function (value, callBack) {
-    if (typeof callBack === "function") {
-        x.read(callBack);
-    }
     x.setActiveLow(true); //  Inverts so that binary 1 activates a relay instead of binary 0
     x.writeSync(binaryValue[value]);
+    if (typeof callBack === "function") {
+        callBack(x.readSync());
+    }
 }; };
 var GpioControl = /** @class */ (function () {
     function GpioControl(pinConfigs) {
