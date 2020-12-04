@@ -1,6 +1,6 @@
 /** @format */
 
-import onoff, { Direction, Edge, Gpio, BinaryValue } from "onoff";
+import onoff, { Gpio, BinaryValue } from "onoff";
 
 const GPIO = onoff.Gpio;
 
